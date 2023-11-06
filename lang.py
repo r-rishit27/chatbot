@@ -1,4 +1,4 @@
-pip install -r requirements.txt
+
 from langchain.vectorstores import FAISS
 from langchain.llms import GooglePalm
 from langchain.embeddings import HuggingFaceInstructEmbeddings
