@@ -16,9 +16,9 @@ from langchain.embeddings import HuggingFaceEmbeddings
 embeddings = HuggingFaceEmbeddings()
 vectordb_file_path = "faiss1_index"
 
-def create_vector_db():
+def create_vector_db(file):
     # Load data from FAQ sheet
-    pdfreader = PdfReader('Machine_Learning.pdf')
+    pdfreader = PdfReader(file)
     from typing_extensions import Concatenate
     raw_text = ''
     for i, page in enumerate(pdfreader.pages):
